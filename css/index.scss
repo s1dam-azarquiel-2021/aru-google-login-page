@@ -129,12 +129,12 @@ main {
 			&-footer {
 				display: flex;
 				flex-direction: row;
-				align-items: end;
+				align-items: center;
+				margin-top: auto;
 
 				a {
 					text-decoration: none;
 					color: #1a73e8;
-					padding: 0.5em 0;
 				}
 
 				input {
