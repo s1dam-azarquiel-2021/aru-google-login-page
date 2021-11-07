@@ -19,28 +19,19 @@ body {
   width: min-content;
   max-width: 80vw;
   min-width: 55vw;
-  margin: 0 auto; }
-  @media screen and (max-width: 600px) {
-    #content {
-      width: auto;
-      max-width: none;
-      margin: 0 2rem; } }
+  margin: 1.75rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem; }
 
 main {
   height: calc(100vh - 3.5rem);
-  margin: 1.75rem auto;
   border: 1px solid #dadce0;
   border-radius: 0.4rem;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   gap: 2rem; }
-  @media screen and (max-width: 600px) {
-    main {
-      border: none;
-      margin: 0;
-      height: 100vh;
-      padding: 2rem 0; } }
   main h2 {
     font-size: 1.5rem; }
   main p {
@@ -53,9 +44,6 @@ main {
     display: flex;
     flex-direction: row;
     gap: 0.5rem; }
-    @media screen and (max-width: 600px) {
-      main .flex-row {
-        flex-direction: column; } }
   main input {
     width: 100%;
     padding: 0.375rem 0.5rem;
@@ -80,17 +68,14 @@ main {
   main div#cuenta {
     height: min-content;
     margin: auto 0; }
-    @media screen and (max-width: 900px) {
-      main div#cuenta {
-        display: none; } }
   main div#form-footer {
     display: flex;
     flex-direction: row;
-    align-items: end; }
+    align-items: center;
+    margin-top: auto; }
     main div#form-footer a {
       text-decoration: none;
-      color: #1a73e8;
-      padding: 0.5em 0; }
+      color: #1a73e8; }
     main div#form-footer input {
       width: auto;
       padding: 0.5em 1.5em;
@@ -105,9 +90,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-    @media screen and (max-width: 600px) {
-      main div#form-signup {
-        max-width: none; } }
     main div#form-signup form {
       display: flex;
       flex-direction: column;
@@ -115,8 +97,7 @@ main {
 
 footer {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 1.75rem; }
+  flex-direction: row; }
   footer select {
     color: #202124; }
   footer ul {
@@ -129,5 +110,54 @@ footer {
 
 .flex-expand {
   flex-grow: 1; }
+
+@media screen and (max-width: 600px) {
+  #content {
+    width: auto;
+    max-width: none;
+    margin: 0 2rem; }
+
+  main {
+    border: none;
+    margin: 0;
+    height: 100vh;
+    padding: 2rem 0; } }
+  @media screen and (max-width: 600px) and (max-height: 620px) {
+    main {
+      padding-bottom: 0;
+      height: auto; } }
+@media screen and (max-width: 600px) {
+    main .flex-row {
+      flex-direction: column; }
+    main div#form-signup {
+      max-width: none; }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem; }
+    footer ul {
+      flex-direction: column;
+      gap: 0.5em; } }
+@media screen and (max-width: 900px) {
+  main div#cuenta {
+    display: none; } }
+@media screen and (min-height: 700px) and (min-width: 600px) {
+  #content {
+    margin: auto;
+    justify-content: center;
+    height: 100vh; }
+
+  main {
+    height: auto; } }
+@media screen and (max-height: 580px) and (min-width: 600px) {
+  #content {
+    margin: 0 auto; }
+
+  main {
+    border: none;
+    margin: 0;
+    height: auto;
+    padding: 2rem 0; } }
 
 /*# sourceMappingURL=index.css.map */
