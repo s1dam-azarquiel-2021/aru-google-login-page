@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+		<link href="css/index.css" rel="stylesheet"/>
+    <title>Login Google</title>
+  </head>
+  <body>
+		<div id="content">
+			<main>
+				<div id="form-signup">
+					<img id="icon-google" alt="Google" src="img/google.svg"/>
+					<div>
+						<h2>Crea una cuenta de Google</h2>
+						<p>Ir a Gmail</p>
+					</div>
+					<form class="flex-expand">
+						<div class="flex-row">
+							<input name="nombre"    type="text" placeholder="Nombre"    autofocus />
+							<input name="apellidos" type="text" placeholder="Apellidos" />
+						</div>
+						<div class="input-with-legend">
+							<input name="correo" type="email" placeholder="Nombre de usuario" />
+							<p>Puedes utilizar letras, numeros, y simbolos</p>
+						</div>
+						<div class="input-with-legend">
+							<div class="flex-row">
+								<input name="password"     type="password" placeholder="Contraseña"   />
+								<input name="confirmacion" type="password" placeholder="Confirmacion" />
+							</div>
+							<p>
+								Utiliza 8 caracteres como minimo con una combinacion de
+								letras, numeros y simbolos
+							</p>
+						</div>
+						<label>
+							<input name="mostrar" type="checkbox" />
+							Mostrar contraseña
+						</label>
+						<div id="form-footer" class="flex-expand">
+							<a class="flex-expand" href="">Prefiero iniciar sesion</a>
+							<input class="align-right" name="submit" type="submit" value="Siguiente" />
+						</div>
+					</form>
+				</div>
+				<div id="cuenta">
+					<img id="icon-cuenta" alt="Cuenta" src="img/account.svg"/>
+					<p class="align-center">Una cuenta. Todo Google a tu disposicion.</p>
+				</div>
+			</main>
+			<footer>
+				<div class="flex-expand">
+					<select name="Idioma">
+						<option value="espanol">Español</option>
+						<option value="portugues">Portugues</option>
+						<option value="ingles">Ingles</option>
+						<option value="aleman">Aleman</option>
+						<option value="ruso">Ruso</option>
+					</select>
+				</div>
+				<ul>
+					<li>Ayuda</li>
+					<li>Privacidad</li>
+					<li>Terminos</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
