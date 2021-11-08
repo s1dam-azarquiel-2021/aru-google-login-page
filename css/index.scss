@@ -160,6 +160,11 @@ footer {
 		list-style-type: none;
 		color: #757575;
 		font-size: 0.75rem;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 }
 
