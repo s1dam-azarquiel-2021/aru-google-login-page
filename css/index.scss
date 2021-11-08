@@ -30,7 +30,7 @@ body {
 }
 
 main {
-	height: calc(100vh - 3.5rem);
+	min-height: calc(100vh - 3.5rem);
 	border: 1px solid #dadce0;
 	border-radius: 0.4rem;
 	padding: 2rem;
@@ -177,12 +177,11 @@ footer {
 	main {
 		border: none;
 		margin: 0;
-		height: 100vh;
+		min-height: 100vh;
 		padding: 2rem 0;
 
-@media screen and (max-height: 620px) {
+		@media screen and (max-height: 600px) {
 			padding-bottom: 0;
-			height: auto;
 		}
 
 		.flex-row {
@@ -226,19 +225,13 @@ footer {
 	}
 
 	main {
-		height: auto;
+		min-height: unset;
 	}
 }
 
 @media screen and (max-height: 580px) and (min-width: 600px) {
-	#content {
-		margin: 0 auto;
-	}
-
 	main {
-		border: none;
 		margin: 0;
-		height: auto;
-		padding: 2rem 0;
+		min-height: unset;
 	}
 }
